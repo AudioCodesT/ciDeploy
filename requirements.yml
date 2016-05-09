@@ -1,0 +1,74 @@
+
+- src: https://github.com/AudioCodesT/audiocodes-common-role.git 
+  name: common
+
+- src: https://github.com/AudioCodesT/audiocodes-dns-role.git 
+  name: dns 
+
+- src: https://github.com/AudioCodesT/ansible-oracle-java.git 
+  name: williamyeh.oracle-java
+
+- src: 
+  name: geerlingguy.git
+
+- src: 
+  name: geerlingguy.repo-epel
+
+- src: https://github.com/AudioCodesT/ansible-role-mariadb.git
+  name: pcextreme.mariadb
+
+- src: https://github.com/AudioCodesT/ansible-role-activemq.git
+  name: activemq
+
+- src: https://github.com/AudioCodesT/mysql-utils.git
+  name: mysql-utils
+
+- src: https://github.com/AudioCodesT/artifactory.git
+  name: bbaassssiiee.artifactory
+
+- src: franklinkim.vim
+
+- src: https://github.com/AudioCodesT/ansible-gerrit-1.git 
+  name: kbrebanov.gerrit
+
+- src: https://github.com/AudioCodesT/ansible-unzip.git 
+  name: kbrebanov.unzip
+
+- src: 
+  name: bzip2
+
+- src: 
+  name: ipp
+
+- src: 
+  name: kbrebanov.git
+
+- src: 
+  name: geerlingguy.jenkins 
+
+- src: 
+  name: tomcat 
+
+- src: 
+  name: geerlingguy.sonar
+
+- src: 
+  name: provision-ec2
+
+- src: 
+  name: 
+
+- src: 
+  name: 
+
+- src: 
+  name: 
+
+- src: 
+  name: 
+
+- src: 
+  name: 
+
+- src: 
+  name: 

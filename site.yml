@@ -1,0 +1,16 @@
+---
+# file: site.yml
+ - include: playbooks/test-env-provision.yml
+
+ - include: playbooks/arm_jenkinsSlave.yml
+ - include: playbooks/artifactory.yml
+ - include: playbooks/console.yml
+ - include: playbooks/gerrit.yml
+ - include: playbooks/ip.yml
+ - include: playbooks/jenkins.yml
+ - include: playbooks/prod.yml
+ - include: playbooks/requirements.yml
+ - include: playbooks/sanjer.yml
+ - include: playbooks/test-env-deploy.yml
+ - include: playbooks/test-env-provision.yml
+ - include: playbooks/test-gerrit.yml

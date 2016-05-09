@@ -1,0 +1,23 @@
+---
+- name: Installs Jenkins slave for ARM project
+  hosts: arm-jenkins-slaves
+  sudo: true
+   	
+  vars:
+    - ansible_ssh_user: centos
+    - ac_flavor: arm
+    - arm_mysql_master_pass: root
+
+
+  roles:
+#    - f500.dumpall
+      
+#    - hosts
+     - dns
+     - williamyeh.oracle-java
+     - geerlingguy.git
+     - geerlingguy.repo-epel
+     - common
+     - pcextreme.mariadb
+     - activemq    
+     - mysql-utils

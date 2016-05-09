@@ -1,0 +1,54 @@
+---
+### 
+# Console server || localhost
+###
+- name: Setup Development env
+  hosts: console
+  sudo: true
+
+  roles:
+    - common
+    - dns
+    - franklinkim.vim
+  vars:
+    vim_config:
+      - 'set tabstop=2'
+      - 'set shiftwidth=2'
+      - 'syntax enable'
+  tasks:
+
+- name: Installs Jenkins slave for ARM project
+  hosts: arm-jenkins-slaves
+  sudo: true
+
+  vars:
+    - ansible_ssh_user: centos
+    - ac_flavor: arm
+    - arm_mysql_master_pass: root
+
+  roles:
+     - dns
+     - williamyeh.oracle-java
+     - geerlingguy.git
+     - geerlingguy.repo-epel
+     - common
+     - pcextreme.mariadb
+     - activemq
+     - mysql-utils
+
+
+- name: Installs Artifactory server
+  hosts: artifactory-servers
+  sudo: true
+
+  vars:
+    - ansible_ssh_user: centos
+    - java_version: 8
+    - java_subversion: 66
+
+  roles:
+    - dns
+    - geerlingguy.repo-epel
+    - bbaassssiiee.artifactory
+
+
